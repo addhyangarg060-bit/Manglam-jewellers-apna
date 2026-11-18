@@ -1,18 +1,7 @@
 MANGLAM JEWELLERS — PUBLIC WEBSITE WITH PUBLIC EDITING
 
 This version has NO Admin Login and NO password. Anyone can view the site and
-anyone can use the public editing panels to change rates or add/remove products.
-
-IMPORTANT LIMITATION:
-Edits are saved only in the browser/device where the person made them
-(using that browser's local storage). They do NOT automatically appear on
-other visitors' phones or computers. Clearing browser data can erase edits.
-The site does not upload photos or changes to a shared server.
-
-To make an update visible to everyone reliably, edit data.js and upload the
-updated website files to your hosting service. For product photos, put images
-inside assets/products and reference them in data.js.
-
+anyone can use the public editing panels to change rates or add/remove product
 PUBLISH WITH GITHUB PAGES:
 1. Create a public GitHub repository.
 2. Upload all website files and the assets folder.
