@@ -1,0 +1,1 @@
+Place product photos in this folder and refer to them from data.js, e.g. assets/products/silver-pendant.jpg

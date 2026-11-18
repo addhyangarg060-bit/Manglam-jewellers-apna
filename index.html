@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbf8f1">
+  <meta name="description" content="Manglam Jewellers, Ghaziabad — trusted jewellery and precious metal rates since 1997.">
+  <title>Manglam Jewellers | By Saurabh Garg</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Manglam Jewellers home">
+      <img src="assets/manglam-logo.png" alt="Manglam Jewellers logo" class="brand-logo"
+           onerror="this.style.display='none';document.getElementById('logo-fallback').style.display='grid'">
+      <span id="logo-fallback" class="logo-fallback">MJ</span>
+      <span class="brand-copy">
+        <strong>Manglam Jewellers</strong>
+        <small>BY SAURABH GARG · SINCE 1997</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#rates" data-en="Rates" data-hi="रेट">Rates</a>
+      <a href="#collection" data-en="Collection" data-hi="कलेक्शन">Collection</a>
+      <a href="#about" data-en="About" data-hi="हमारे बारे में">About</a>
+      <a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="language-toggle" class="language-button" type="button" aria-label="Switch language">हिंदी</button>
+      <a class="header-call" href="tel:9891393189">Call us</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow" data-en="TRUSTED SINCE 1997" data-hi="1997 से विश्वास की पहचान">TRUSTED SINCE 1997</p>
+        <h1 data-en="A legacy of trust.<br> A promise of purity." data-hi="विश्वास की विरासत।<br> शुद्धता का वादा।">A legacy of trust.<br> A promise of purity.</h1>
+        <p class="hero-description" data-en="Discover jewellery and precious metals with the warmth of a family tradition." data-hi="परिवार की परंपरा और भरोसे के साथ आभूषण और कीमती धातुओं की खरीदारी करें।">Discover jewellery and precious metals with the warmth of a family tradition.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#rates" data-en="View Today's Rates" data-hi="आज के रेट देखें">View Today's Rates</a>
+          <a class="text-link" href="#collection" data-en="Explore collection" data-hi="कलेक्शन देखें">Explore collection</a>
+        </div>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <div class="hero-ring"></div>
+        <div class="hero-monogram">M</div>
+        <span>MANGLAM</span>
+      </div>
+    </section>
+
+    <section id="rates" class="section rates-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-en="MARKET INFORMATION" data-hi="बाज़ार की जानकारी">MARKET INFORMATION</p>
+          <h2 data-en="Gold & Silver Rates" data-hi="सोने और चांदी के रेट">Gold &amp; Silver Rates</h2>
+        </div>
+        <p class="rate-note" data-en="Rates are indicative. Please call to confirm before purchase." data-hi="रेट सांकेतिक हैं। खरीदारी से पहले फोन करके पुष्टि करें।">Rates are indicative. Please call to confirm before purchase.</p>
+      </div>
+      <div class="rate-grid" id="rate-grid">
+        <article class="rate-card"><span class="metal-label">24K GOLD <i>999</i></span><strong class="rate-value">—</strong><span class="rate-unit">per gram</span><span class="rate-ten">10g: —</span></article>
+        <article class="rate-card"><span class="metal-label">22K GOLD <i>916</i></span><strong class="rate-value">—</strong><span class="rate-unit">per gram</span><span class="rate-ten">10g: —</span></article>
+        <article class="rate-card"><span class="metal-label">20K GOLD <i>833</i></span><strong class="rate-value">—</strong><span class="rate-unit">per gram</span><span class="rate-ten">10g: —</span></article>
+        <article class="rate-card"><span class="metal-label">18K GOLD <i>750</i></span><strong class="rate-value">—</strong><span class="rate-unit">per gram</span><span class="rate-ten">10g: —</span></article>
+        <article class="rate-card silver-card"><span class="metal-label">SILVER <i>999</i></span><strong class="rate-value">—</strong><span class="rate-unit">per gram</span><span class="rate-ten">1kg: —</span></article>
+      </div>
+      <p class="fine-print" data-en="Final jewellery prices may vary based on making charges, GST, design and weight. Rates may change during the day." data-hi="अंतिम आभूषण मूल्य मेकिंग चार्ज, GST, डिज़ाइन और वज़न के अनुसार अलग हो सकता है। दिन में रेट बदल सकते हैं।">Final jewellery prices may vary based on making charges, GST, design and weight. Rates may change during the day.</p>
+      <details class="public-editor">
+        <summary>✎ Edit gold &amp; silver rates</summary>
+        <p class="editor-warning">This editing option is public. Anyone visiting this website can change the displayed rates on this device/browser.</p>
+        <form id="rates-form" class="editor-form">
+          <label>24K Gold (₹ / gram)<input type="number" min="0" step="0.01" name="gold24" placeholder="Enter rate"></label>
+          <label>22K Gold (₹ / gram)<input type="number" min="0" step="0.01" name="gold22" placeholder="Enter rate"></label>
+          <label>20K Gold (₹ / gram)<input type="number" min="0" step="0.01" name="gold20" placeholder="Enter rate"></label>
+          <label>18K Gold (₹ / gram)<input type="number" min="0" step="0.01" name="gold18" placeholder="Enter rate"></label>
+          <label>Silver (₹ / gram)<input type="number" min="0" step="0.01" name="silver" placeholder="Enter rate"></label>
+          <button class="button button-gold" type="submit">Save rates</button>
+          <span id="rates-save-status" class="save-status" aria-live="polite"></span>
+        </form>
+      </details>
+    </section>
+
+    <section id="collection" class="section collection-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-en="MADE TO BE CHERISHED" data-hi="यादों के लिए खास">MADE TO BE CHERISHED</p>
+          <h2 data-en="Explore our collection" data-hi="हमारा कलेक्शन देखें">Explore our collection</h2>
+        </div>
+        <a class="text-link" href="https://wa.me/919891393189?text=Hello%20Manglam%20Jewellers%2C%20I%20would%20like%20to%20see%20your%20collection." target="_blank" rel="noopener" data-en="Enquire on WhatsApp" data-hi="WhatsApp पर पूछें">Enquire on WhatsApp</a>
+      </div>
+      <div class="category-list" id="category-list">
+        <button class="category active" data-category="All Products">All Products</button>
+        <button class="category" data-category="Gold Jewellery">Gold Jewellery</button>
+        <button class="category" data-category="Silver Jewellery">Silver Jewellery</button>
+        <button class="category" data-category="Rings">Rings</button>
+        <button class="category" data-category="Chains">Chains</button>
+        <button class="category" data-category="Earrings">Earrings</button>
+        <button class="category" data-category="Bracelets">Bracelets</button>
+        <button class="category" data-category="Coins & Gifts">Coins &amp; Gifts</button>
+      </div>
+      <details class="public-editor product-editor">
+        <summary>✎ Add / manage product photos &amp; details</summary>
+        <p class="editor-warning">This editing option is public. Anyone visiting this website can add or remove products. Changes are saved in this browser only.</p>
+        <form id="product-form" class="editor-form product-form">
+          <label>Product name<input name="name" required placeholder="e.g. Silver bracelet"></label>
+          <label>Category<select name="category"><option>Gold Jewellery</option><option>Silver Jewellery</option><option>Rings</option><option>Chains</option><option>Earrings</option><option>Bracelets</option><option>Coins &amp; Gifts</option></select></label>
+          <label>Photo<input name="photo" type="file" accept="image/*" required></label>
+          <label>Description<input name="description" placeholder="Optional details"></label>
+          <label>Price (optional)<input name="price" placeholder="e.g. ₹2,500"></label>
+          <label class="check-label"><input name="showPrice" type="checkbox" checked> Show price on website</label>
+          <button class="button button-gold" type="submit">Add product</button>
+          <span id="product-save-status" class="save-status" aria-live="polite"></span>
+        </form>
+        <div id="manage-products" class="manage-products"></div>
+      </details>
+      <div id="product-grid" class="product-grid">
+        <div class="empty-products">
+          <span class="empty-icon">✧</span>
+          <h3>Our collection is being updated</h3>
+          <p>For designs and availability, contact Manglam Jewellers on WhatsApp.</p>
+          <a class="button button-outline" href="https://wa.me/919891393189?text=Hello%20Manglam%20Jewellers%2C%20please%20share%20your%20latest%20designs." target="_blank" rel="noopener">Ask for latest designs</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-seal"><span>MJ</span><small>EST. 1997</small></div>
+      <div class="about-copy">
+        <p class="eyebrow" data-en="OUR STORY" data-hi="हमारी कहानी">OUR STORY</p>
+        <h2 data-en="A family tradition built on trust." data-hi="भरोसे पर बनी एक पारिवारिक परंपरा।">A family tradition built on trust.</h2>
+        <p data-en="At Manglam Jewellers, we believe every purchase should come with confidence, care and a personal touch. Serving customers since 1997, we are committed to quality and a trusted buying experience." data-hi="Manglam Jewellers में हमारा मानना है कि हर खरीदारी भरोसे, देखभाल और अपनापन के साथ होनी चाहिए। 1997 से ग्राहकों की सेवा करते हुए, हम गुणवत्ता और भरोसेमंद अनुभव के लिए प्रतिबद्ध हैं।">At Manglam Jewellers, we believe every purchase should come with confidence, care and a personal touch. Serving customers since 1997, we are committed to quality and a trusted buying experience.</p>
+        <strong>By Saurabh Garg</strong>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-en="VISIT OUR STORE" data-hi="हमारी दुकान पर आएँ">VISIT OUR STORE</p>
+          <h2 data-en="We'd love to welcome you." data-hi="आपका स्वागत है।">We'd love to welcome you.</h2>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-detail">
+          <span class="contact-icon">⌖</span>
+          <div><h3>Visit us</h3><p>Manglam Jewellers, H-98, Sector 23,<br>Sanjay Nagar, Ghaziabad, Uttar Pradesh</p></div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-icon">☎</span>
+          <div><h3>Call / WhatsApp</h3><p><a href="tel:9891393189">9891393189</a></p></div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-icon">◎</span>
+          <div><h3>Instagram</h3><p><a href="https://www.instagram.com/manglam__jeweller/" target="_blank" rel="noopener">@manglam__jeweller</a></p></div>
+        </div>
+      </div>
+      <div class="contact-actions">
+        <a class="button button-gold" href="https://wa.me/919891393189" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a class="button button-outline" href="https://share.google/fpJ3IRxAdTCu9oSn0" target="_blank" rel="noopener">Google Reviews</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#home" class="footer-brand">MANGLAM JEWELLERS</a>
+    <p>By Saurabh Garg · Serving with trust since 1997</p>
+    <small>© <span id="year"></span> Manglam Jewellers. All rights reserved.</small>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/919891393189" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">✆</a>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
